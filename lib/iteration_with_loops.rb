@@ -5,10 +5,10 @@ def join_nested_strings(src)
   string = []
     while outer_index < src.count
       element_index = 0
-      inner_string = ""
+      inner_string = []
       while element_index < src[outer_index].count
         if src[outer_index][element_index].class == String
-        inner_string += src[outer_index][element_index]
+        inner_string << src[outer_index][element_index]
         end
         element_index += 1
       end
